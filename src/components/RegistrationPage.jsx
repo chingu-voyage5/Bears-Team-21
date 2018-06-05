@@ -35,6 +35,7 @@ class RegistrationPage extends Component {
             value={this.state.password}
             onChange={this.onPasswordChange}
           />
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
