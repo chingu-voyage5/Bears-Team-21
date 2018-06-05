@@ -11,6 +11,11 @@ class RegistrationPage extends Component {
     this.setState(() => ({ email: value }));
   };
 
+  onPasswordChange = e => {
+    const value = e.target.value;
+    this.setState(() => ({ password: value }));
+  };
+
   render() {
     return (
       <div>
@@ -24,7 +29,12 @@ class RegistrationPage extends Component {
             onChange={this.onEmailChange}
           />
           <label htmlFor="password">Password: </label>
-          <input type="password" name="password" value={this.state.password} />
+          <input
+            type="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.onPasswordChange}
+          />
         </form>
       </div>
     );
