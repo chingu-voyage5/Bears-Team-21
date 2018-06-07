@@ -3,7 +3,8 @@ import React from 'react';
 //import the Login component and Register component
 //for now have the following dummy components
 //dummy Login and Register components
-let Login = ()=>(<h3>Login Component</h3>)
+import Login from './Login';
+//let Login = ()=>(<h3>Login Component</h3>)
 let Register = ()=>(<h3>Register Component</h3>)
 
 class Home extends React.Component {
