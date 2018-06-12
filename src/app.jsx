@@ -2,6 +2,8 @@ import "babel-polyfill";
 import React from "react";
 import ReactDOM from "react-dom";
 
-const template = <div>Hello world!</div>;
+import App from './components/App'
 
-ReactDOM.render(template, document.getElementById("app"));
+//const template = <div>Hello world!</div>;
+
+ReactDOM.render(<App/>, document.getElementById("app"));
